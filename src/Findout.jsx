@@ -3,8 +3,8 @@ import styles from "./Findout.module.css"
 const Findout = () => {
     return (
         <section className={styles.findout}>
-            <h3 className={styles.title}>Find out more about how we work</h3>
-            <button className={styles.btn}>How we work</button>
+            <h3 className={styles.title}>Find out more about who we are</h3>
+            <a href="/community-profile" className={styles.btn}>Learn More</a>
         </section>   
     )
 }

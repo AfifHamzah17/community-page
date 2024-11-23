@@ -1,0 +1,107 @@
+.card-container {
+  width: 80%;
+  max-width: 1200px;
+  background-color: #fff; /* Latar belakang putih untuk card besar */
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  padding: 24px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* Gallery menggunakan Flexbox untuk layout gambar */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 card per baris */
+  gap: 20px;
+  padding: 0 20px;
+}
+
+/* Card individual dengan bayangan dan efek hover */
+.card {
+  background: linear-gradient(145deg, #ffffff, #e6e6e6); /* Gradient background */
+  border: 1px solid #ddd; /* Border untuk card */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative; /* Untuk overlay */
+}
+
+.card:hover {
+  transform: translateY(-10px); /* Mengangkat card sedikit saat hover */
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2); /* Menambahkan bayangan lebih tajam */
+}
+
+/* Gambar di dalam card */
+.card-img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover; /* Memastikan gambar terpotong dengan benar */
+  transition: transform 0.3s ease; /* Transisi untuk efek zoom */
+}
+
+.card:hover .card-img {
+  transform: scale(1.05); /* Zoom pada gambar saat hover */
+}
+
+/* Overlay yang muncul saat hover pada card */
+.card-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5); /* Background transparan dengan hitam */
+  color: #fff;
+  padding: 12px;
+  border-top: 2px solid #fff;
+  display: none;
+}
+
+.card:hover .card-overlay {
+  display: block; /* Menampilkan overlay saat hover */
+}
+
+/* Deskripsi gambar dalam card */
+.card-description {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin: 12px 0; /* Margin atas dan bawah */
+  padding: 0 10px; /* Padding samping untuk tampilan lebih baik */
+  color: #555; /* Warna teks deskripsi */
+  white-space: pre-line; /* This allows <br> to be interpreted as line breaks */
+  line-height: 1.4;
+}
+
+/* Styling responsif: 2 card per baris pada layar lebih kecil */
+@media (max-width: 768px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr); /* 2 card per baris */
+  }
+}
+
+/* Styling responsif: 1 card per baris pada layar lebih kecil */
+@media (max-width: 480px) {
+  .gallery {
+    grid-template-columns: 1fr; /* 1 card per baris */
+  }
+}
+body {
+	background: linear-gradient(-45deg,#e6e6);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}

@@ -24,23 +24,23 @@ const Features = () => {
             <div className={styles.wrapper}>
                 <IconTitleText 
                     icon={"images/icon-snappy-process.svg"}
-                    title={"Snappy Process"}
+                    title={"Ride with Unity"}
                     text={
-                        "Our application process can be completed in minutes. Don't get stuck filling in tedious forms."
+                        "At ZX Owners Medan, we believe in the power of community. We are more than just riders; we are a family united by our love for the ZX Series. Together, we share experiences, support one another, and create lasting memories both on and off the road."
                     }
                 />
                 <IconTitleText 
                     icon={"images/icon-affordable-prices.svg"}
-                    title={"Affordable Prices"}
+                    title={"Safety First"}
                     text={
-                        "We don't want you worrying about high monthly costs. Our prices may be low, but we still offer the best coverage possible."
+                        "We prioritize safety in every ride. Our commitment to responsible riding ensures that every member of ZX Owners Medan enjoys the thrill of the ZX Series while staying protected. We believe that true speed comes from knowing how to ride safely and confidently."
                     }
                 />
                 <IconTitleText 
                     icon={"images/icon-people-first.svg"}
-                    title={"People First"}
+                    title={"Driven by Passion"}
                     text={
-                        "Our plans aren't full of conditions and clauses to prevent payouts. We make sure you're covered when you need it."
+                        "Our love for Kawasaki ZX Series fuels everything we do. Whether it's through exhilarating rides, technical knowledge sharing, or social gatherings, our passion drives us to continuously grow, connect, and celebrate the thrill of riding together."
                     }
                 />
             </div>

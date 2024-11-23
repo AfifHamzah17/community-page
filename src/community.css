@@ -1,0 +1,43 @@
+/* community.css */
+
+.community-container {
+    padding: 20px;
+  }
+  
+  .accordion {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .accordion-item {
+    margin-bottom: 10px;
+  }
+  
+  .accordion-header {
+    background-color: #f1f1f1;
+    padding: 10px;
+  }
+  
+  .accordion-button {
+    width: 100%;
+    text-align: left;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .accordion-body {
+    padding: 10px;
+    background-color: #fafafa;
+  }
+  
+  .accordion-button:focus {
+    outline: none;
+  }
+  
+  .accordion-button.collapsed {
+    background-color: #e9ecef;
+  }
+  

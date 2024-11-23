@@ -16,10 +16,13 @@ const Bar = () => {
 
     return (
         <div className={styles.top_bar}>
+            <a href="/">
             <img 
-            src="images/logo.svg" 
+            src="images/logo_wb.png" 
+            width="112" height="50"
             alt="insure logo"
             />
+            </a>
             <button className={styles.menu_btn} onClick={(e) => {handleClick(e)}}>
             <img 
                 src={icon}
