@@ -11,6 +11,7 @@ import TimelineTwo from './timelineTwo';
 import TimelineThree from './timelineThree';
 import TimelineFour from './timelineFour';
 import TimelineFive from './timelineFive';
+import ThreeJS from './moduleThree';
 function App() {
 
   return (
@@ -80,6 +81,17 @@ function App() {
             </header>
             <main>
               <TimelineFive />
+            </main>
+            <Footer />
+          </>
+        } />
+        <Route path="/three-js" element={
+          <>
+            <header>
+              <Bar />
+            </header>
+            <main>
+              <ThreeJS   />
             </main>
             <Footer />
           </>
