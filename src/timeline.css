@@ -242,3 +242,23 @@ h1, h2, h3, h4 {
     transform: translateX(0);
   }
 }
+
+.session-button {
+  background-color: #353866;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.session-button:hover {
+  background-color: #e1e2e2;
+}
+
+.session-button:active {
+  background-color: #d5d6d6;
+}

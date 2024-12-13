@@ -8,9 +8,6 @@ import Timeline from './timeline';
 import Card from './card';
 import Community from './community';
 import TimelineTwo from './timelineTwo';
-import TimelineThree from './timelineThree';
-import TimelineFour from './timelineFour';
-import TimelineFive from './timelineFive';
 function App() {
 
   return (
@@ -57,29 +54,7 @@ function App() {
               <Bar />
             </header>
             <main>
-              <TimelineThree />
-            </main>
-            <Footer />
-          </>
-        } />
-        <Route path="/activities-session-4" element={
-          <>
-            <header>
-              <Bar />
-            </header>
-            <main>
-              <TimelineFour />
-            </main>
-            <Footer />
-          </>
-        } />
-        <Route path="/activities-session-5" element={
-          <>
-            <header>
-              <Bar />
-            </header>
-            <main>
-              <TimelineFive />
+              <Timeline />
             </main>
             <Footer />
           </>

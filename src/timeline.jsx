@@ -1,4 +1,3 @@
-// src/Timeline.js
 import React, { useEffect } from 'react';
 import './Timeline.css'; 
 
@@ -43,17 +42,49 @@ const Timeline = () => {
   }, []);
 
   return (
+  <div style={{ textAlign: 'center', marginTop: '2rem' }}>
+    <a href="/activities">
+      <button class="session-button">
+        Session 1
+      </button>
+    </a>
+    <a href="/activities-session-2">
+      <button class="session-button">
+        Session 2
+      </button>
+    </a>
+    <a href="/activities-session-3">
+      <button class="session-button">
+        Session 3
+      </button>
+    </a>
+    <a href="/activities-session-4">
+      <button class="session-button">
+        Session 4
+      </button>
+    </a>
+    <a href="/activities-session-5">
+      <button class="session-button">
+        Session 5
+      </button>
+    </a>
     <div className="timeline-container">
-      <h1 className="project-name">1st Anniversary Activities</h1>
+      <h1 className="project-name">
+        Session 1 Activities,
+        <br />
+        Big Papa Sekretariat ZOM
+      </h1>
       <div id="timeline">
         <div className="timeline-item">
           <div className="timeline-icon">
             <i className="fa fa-envelope-o" aria-hidden="true"></i>
           </div>
           <div className="timeline-content">
-            <h2>Big Gathering</h2>
-            <p>Kegiatan pembukaan perayaan 1st Anniversary ZX Owners Medan yang akan dihadiri oleh seluruh anggota klub, dengan acara makan bersama, live music, dan kompetisi kecil. Ini adalah kesempatan untuk mempererat tali persaudaraan antar anggota dan merayakan momen spesial bersama.</p>
-            <span className="time-stamp">Rabu Jan - 15 - 2025 09:00 AM</span>
+            <h2>Registrasi dan makan</h2>
+            <p>Peserta acara diminta untuk melakukan registrasi 
+              dan menikmati hidangan yang telah disediakan sambil menikmati 
+              penampilan musik band. Suasana santai dan hangat untuk saling mengenal.	</p>
+            <span className="time-stamp">Rabu Jan - 15 - 2025 19.00 - 19.45</span>
           </div>
         </div>
         <div className="timeline-item">
@@ -61,9 +92,11 @@ const Timeline = () => {
             <i className="fa fa-envelope-open-o" aria-hidden="true"></i>
           </div>
           <div className="timeline-content right">
-            <h2>Touring to Pulau Sabang</h2>
-            <p>Touring bersama klub ZX seluruh Indonesia menuju Pulau Sabang, Nanggroe Aceh Darussalam. Peserta akan berkumpul di Kantor dan Showroom Kawasaki Medan sebelum memulai perjalanan panjang yang penuh petualangan dan kebersamaan.</p>
-            <span className="time-stamp">Kamis Jan - 16 - 2025 10:00 AM</span>
+            <h2>Menyanyikan Indonesia Raya</h2>
+            <p>Semua peserta akan berdiri dan menyanyikan lagu kebangsaan Indonesia Raya 
+              sebagai tanda penghormatan dan kebanggaan terhadap tanah air Indonesia, 
+              menciptakan suasana yang penuh semangat.</p>
+            <span className="time-stamp">Rabu Jan - 15 - 2025 19.45 - 20.00</span>
           </div>
         </div>
         <div className="timeline-item">
@@ -71,9 +104,11 @@ const Timeline = () => {
             <i className="fa fa-star" aria-hidden="true"></i>
           </div>
           <div className="timeline-content">
-            <h2>Gathering & Sharing</h2>
-            <p>Sesi Gathering dan Sharing Knowledge dengan klub motor Kawasaki di Banda Aceh. Para rider akan saling bertukar pengalaman dan wawasan seputar dunia motor Kawasaki, memperkuat komunitas ZX Series di Aceh.</p>
-            <span className="time-stamp">Jum'at Jan - 17 - 2025 08:00 AM</span>
+            <h2>Pembacaan Doa</h2>
+            <p>Acara dilanjutkan dengan pembacaan doa yang dipimpin oleh Imran Muaya. 
+              Doa ini bertujuan untuk memohon kelancaran dan keselamatan bagi seluruh 
+              kegiatan yang akan berlangsung dalam acara ini.</p>
+            <span className="time-stamp">Rabu Jan - 15 - 2025 20.00 - 20.15</span>
           </div>
         </div>
         <div className="timeline-item">
@@ -81,9 +116,11 @@ const Timeline = () => {
             <i className="fa fa-check-square-o" aria-hidden="true"></i>
           </div>
           <div className="timeline-content right">
-            <h2>Night Ride</h2>
-            <p>Kolaborasi dengan komunitas bikers Banda Aceh untuk melakukan Night Ride (NR) bersama. Selama perjalanan, dokumentasi foto dan video akan dilakukan untuk mengabadikan momen spesial ini.</p>
-            <span className="time-stamp">Jum'at Jan - 17 - 2025 08:00 AM</span>
+            <h2>Penyerahan amplop Anak Yatim Piatu </h2>
+            <p>Sebagai bentuk kepedulian sosial, para peserta acara secara simbolis
+               menyerahkan amplop untuk anak yatim piatu. Kegiatan ini diharapkan 
+               dapat memberikan kebahagiaan kepada yang membutuhkan.</p>
+            <span className="time-stamp">Rabu Jan - 15 - 2025 20.15 - 20.30</span>
           </div>
         </div>
         <div className="timeline-item">
@@ -91,12 +128,35 @@ const Timeline = () => {
             <i className="fa fa-user-circle-o" aria-hidden="true"></i>
           </div>
           <div className="timeline-content">
-            <h2>Safety Riding Training</h2>
-            <p>Pelatihan safety riding di Pulau Sabang yang bertujuan untuk meningkatkan keterampilan berkendara aman bagi semua rider ZX Series. Kegiatan ini diikuti dengan Night Ride bersama seluruh bikers pengguna ZX Series.</p>
-            <span className="time-stamp">Sabtu Jan - 18 - 2025 10:00 AM</span>
+            <h2>Potong Tumpeng & Kata Sambutan Para Ketua</h2>
+            <p>Sebagai simbol syukur atas perjalanan ZOM selama setahun, acara 
+              dilanjutkan dengan pemotongan tumpeng. Setiap ketua memberikan 
+              sambutan yang menginspirasi, mengajak peserta untuk terus berprestasi.</p>
+            <span className="time-stamp">Rabu Jan - 15 - 2025 20.30 - 21.00</span>
+          </div>
+        </div>
+        <div className="timeline-item">
+          <div className="timeline-icon success">
+            <i className="fa fa-check-square-o" aria-hidden="true"></i>
+          </div>
+          <div className="timeline-content right">
+            <h2>Safety Riding</h2>
+            <p>Kolaborasi dengan komunitas bikers Banda Aceh untuk melakukan Night Ride (NR) bersama. Selama perjalanan, dokumentasi foto dan video akan dilakukan untuk mengabadikan momen spesial ini.</p>
+            <span className="time-stamp">Rabu Jan - 15 - 2025 21.00 - 21.30</span>
+          </div>
+        </div>
+        <div className="timeline-item">
+          <div className="timeline-icon">
+            <i className="fa fa-check-square-o" aria-hidden="true"></i>
+          </div>
+          <div className="timeline-content">
+            <h2>Freestyle ZX & Penutupan </h2>
+            <p>Kolaborasi dengan komunitas bikers Banda Aceh untuk melakukan Night Ride (NR) bersama. Selama perjalanan, dokumentasi foto dan video akan dilakukan untuk mengabadikan momen spesial ini.</p>
+            <span className="time-stamp">Rabu Jan - 15 - 2025 21.30 - 22.00</span>
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 };
